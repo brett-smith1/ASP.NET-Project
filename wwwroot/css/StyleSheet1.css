@@ -1,0 +1,73 @@
+﻿body {
+    background-image: url('/images/desktop.jpg');
+    background-color: cadetblue;
+}
+
+nav {
+    color: #79775f;
+    height: 40px;
+    font-size: 25px;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    height: contain;
+    margin: 20px;
+    border: 5px solid;
+    text-decoration-line: underline;
+    color: black;
+    background-color: cadetblue;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size:25px;
+    background-color: cadetblue;
+    text-align:center, center;
+}
+
+nav :hover {
+    color:whitesmoke;
+}
+
+.button {
+    border: outset;
+    font-weight: 800;
+    color: #79775f;
+    background-color: black;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #79775f;
+    color: whitesmoke;
+} 
+
+.div1 {
+    height:contain;
+    margin: 20px;
+    border: 5px solid;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+input:invalid{
+    background-color: lightpink;
+}
+
+.MssaInvalid {
+    background-color: lightpink; 
+}
+
+.MssaValid {
+    background-color: whitesmoke;
+}
