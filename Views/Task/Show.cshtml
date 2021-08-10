@@ -1,0 +1,45 @@
+﻿@model ASP.NET_Project.Models.Task
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show</title>
+</head>
+<body>
+    <h1>Task</h1>
+    <h2>
+        <!--Use Razor syntax for if/else statement to display different page to Client side-->
+        @{
+            if (Model.TaskName != null)
+            {
+                <p>
+                    Task @Model.TaskName<br />
+                    Category: @Model._Category <br />
+                    Priority: @Model.Priority <br />
+                    Due: @Model.DueDate <br />
+                </p>
+            }
+            else
+            {
+                <p>
+                    @ViewBag.Task<br />
+                    @ViewBag.Response
+                </p>
+
+                //HTML Helper, link to AddTask method in TaskController
+                @Html.ActionLink("Create Task", "AddTask");
+            }
+
+        }
+
+    </h2><br /><br />
+
+    @await Html.PartialAsync("_PartialView");
+
+</body>
+</html>

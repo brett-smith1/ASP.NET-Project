@@ -1,0 +1,32 @@
+﻿@model ASP.NET_Project.Models.Account
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show</title>
+</head>
+<body>
+    
+    <h1>Account</h1>
+    <h2>
+        First Name: @Model.FirstName <br />
+        Last Name: @Model.LastName <br />
+        Username: @Model.UserName <br />
+        Password: @Model.Password <br />
+    </h2>
+
+    <!--Tag Helper-->
+    <a asp-action="Create">click here to create a new account</a><br /><br />
+
+    
+     @await Html.PartialAsync("_PartialView");
+    
+        
+</body>
+</html>
